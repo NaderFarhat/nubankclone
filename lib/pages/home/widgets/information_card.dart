@@ -34,6 +34,20 @@ class InformationCard extends StatelessWidget {
               )
             ],
           ),
+          Row(
+            children: [
+              OutlinedButton(
+                onPressed: () {
+                  print('Received click');
+                },
+                child: Text('conhecer'),
+                style: OutlinedButton.styleFrom(
+                  primary: Color(0xff8a05be),
+                  side: BorderSide(color: Color(0xff8a05be), width: 1),
+                ),
+              )
+            ],
+          ),
         ],
       ),
     );
