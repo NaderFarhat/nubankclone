@@ -14,9 +14,10 @@ class TopHome extends StatelessWidget {
           height: MediaQuery.of(context).padding.top,
         ),
         Container(
-          color: Colors.red,
-          height: MediaQuery.of(context).size.height * .1,
-          padding: EdgeInsets.symmetric(horizontal: 10.0),
+          color: Color(0xff8a05be),
+          height: MediaQuery.of(context).size.height * .13,
+          padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10),
+          margin: EdgeInsets.only(top: 20.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -25,7 +26,7 @@ class TopHome extends StatelessWidget {
                 children: [
                   Text(
                     'Olá, Nader',
-                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                   )
                 ],
               ),
@@ -38,8 +39,12 @@ class TopHome extends StatelessWidget {
                         child: Column(
                           children: [
                             Container(
+                              height: 40,
+                              width: 40,
+                              margin: const EdgeInsets.only(
+                                  left: 10.0, right: 10.0),
                               decoration: BoxDecoration(
-                                color: Colors.black,
+                                color: Color(0xff9824c7),
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(20)),
                               ),
@@ -53,8 +58,12 @@ class TopHome extends StatelessWidget {
                       Column(
                         children: [
                           Container(
+                            height: 40,
+                            width: 40,
+                            margin:
+                                const EdgeInsets.only(left: 10.0, right: 10.0),
                             decoration: BoxDecoration(
-                              color: Colors.black,
+                              color: Color(0xff9824c7),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(20)),
                             ),

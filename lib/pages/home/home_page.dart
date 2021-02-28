@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
               },
             ),
             Positioned(
-                top: 100,
+                top: 125,
                 height: 450,
                 // width: 300,
                 left: 0,
