@@ -8,7 +8,7 @@ class CreditCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
+      height: 140,
       color: Colors.black,
       child: Column(
         children: [
@@ -31,26 +31,50 @@ class CreditCard extends StatelessWidget {
               )
             ],
           ),
-          Row(
-            children: [
-              Text(
-                "R\$ 0,00",
-                style: TextStyle(fontSize: 12),
-              )
-            ],
-          ),
-          Row(
-            children: [
-              Text(
-                "Limite disponível ",
-                style: TextStyle(fontSize: 12),
-              ),
-              Text(
-                "R\$ 3000,00",
-                style: TextStyle(fontSize: 12),
-              ),
-            ],
-          ),
+          showData
+              ? Row(
+                  children: [
+                    Text(
+                      "R\$ 0,00",
+                      style: TextStyle(fontSize: 12),
+                    )
+                  ],
+                )
+              : Row(
+                  children: [
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      height: 22.0,
+                      child: const DecoratedBox(
+                        decoration: const BoxDecoration(color: Colors.red),
+                      ),
+                    )
+                  ],
+                ),
+          showData
+              ? Row(
+                  children: [
+                    Text(
+                      "Limite disponível ",
+                      style: TextStyle(fontSize: 12),
+                    ),
+                    Text(
+                      "R\$ 3000,00",
+                      style: TextStyle(fontSize: 12),
+                    ),
+                  ],
+                )
+              : Row(
+                  children: [
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.9,
+                      height: 22.0,
+                      child: const DecoratedBox(
+                        decoration: const BoxDecoration(color: Colors.red),
+                      ),
+                    )
+                  ],
+                ),
         ],
       ),
     );

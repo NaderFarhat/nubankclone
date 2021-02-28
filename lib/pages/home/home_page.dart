@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
               right: 0,
               height: 120,
               child: Container(
-                color: Colors.red,
+                color: Color(0xff8a05be),
                 child: ListView(
                   physics: BouncingScrollPhysics(),
                   scrollDirection: Axis.horizontal,
