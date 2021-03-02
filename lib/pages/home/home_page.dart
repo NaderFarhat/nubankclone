@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                     Padding(
                       padding: const EdgeInsets.all(20.0),
                       child: InformationCard(
-                          icon: Icons.person_add_alt,
+                          icon: Icons.wallet_giftcard,
                           title: 'Rewards',
                           subTitle:
                               'Apague compras com pontos que nunca expiram.'),
@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
                     Padding(
                       padding: const EdgeInsets.all(20.0),
                       child: InformationCard(
-                          icon: Icons.person_add_alt,
+                          icon: Icons.umbrella,
                           title: 'Seguro de vida',
                           subTitle:
                               'Conheça Nubank Vida: um seguro simples e que cabe no bolso.'),
