@@ -9,7 +9,8 @@ class ItemMenuBottom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(10.0),
+      padding:
+          const EdgeInsets.only(top: 8.0, left: 4.0, right: 8.0, bottom: 16.0),
       child: Container(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -25,7 +26,7 @@ class ItemMenuBottom extends StatelessWidget {
             ],
           ),
         ),
-        width: 82,
+        width: 80,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(5), color: Colors.white24),
       ),

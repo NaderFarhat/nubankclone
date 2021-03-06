@@ -15,20 +15,24 @@ class TopHome extends StatelessWidget {
         ),
         Container(
           color: Color(0xff8a05be),
-          height: MediaQuery.of(context).size.height * .13,
+          height: MediaQuery.of(context).size.height * .11,
           padding: EdgeInsets.symmetric(horizontal: 10.0, vertical: 10),
-          margin: EdgeInsets.only(top: 20.0),
+          margin: EdgeInsets.only(top: 26.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Column(
-                children: [
-                  Text(
-                    'Olá, Nader',
-                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                  )
-                ],
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                child: Column(
+                  children: [
+                    Text(
+                      'Olá, Nader',
+                      style:
+                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                    )
+                  ],
+                ),
               ),
               Column(
                 children: [
@@ -41,8 +45,8 @@ class TopHome extends StatelessWidget {
                             Container(
                               height: 40,
                               width: 40,
-                              margin: const EdgeInsets.only(
-                                  left: 10.0, right: 10.0),
+                              margin:
+                                  const EdgeInsets.only(left: 10.0, right: 4.0),
                               decoration: BoxDecoration(
                                 color: Color(0xff9824c7),
                                 borderRadius:

@@ -45,15 +45,18 @@ class _HomePageState extends State<HomePage> {
                   scrollDirection: Axis.vertical,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(20.0),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20.0, vertical: 8.0),
                       child: CreditCard(showData: _showData),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(20.0),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20.0, vertical: 8.0),
                       child: AccountCard(showData: _showData),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(20.0),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20.0, vertical: 8.0),
                       child: InformationCard(
                           icon: Icons.wallet_giftcard,
                           title: 'Rewards',
@@ -61,7 +64,8 @@ class _HomePageState extends State<HomePage> {
                               'Apague compras com pontos que nunca expiram.'),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(20.0),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 20.0, vertical: 8.0),
                       child: InformationCard(
                           icon: Icons.umbrella,
                           title: 'Seguro de vida',
@@ -71,8 +75,8 @@ class _HomePageState extends State<HomePage> {
                   ],
                 )),
             Positioned(
-              bottom: 0 + MediaQuery.of(context).padding.bottom,
-              left: 0,
+              bottom: 16 + MediaQuery.of(context).padding.bottom,
+              left: 14,
               right: 0,
               height: 120,
               child: Container(
